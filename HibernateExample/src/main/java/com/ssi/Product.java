@@ -9,6 +9,10 @@ public class Product {
 	@Id
 	private int pcode;
 	private String pname;
+	@Override
+	public String toString() {
+		return "Product [pcode=" + pcode + ", pname=" + pname + ", price=" + price + "]";
+	}
 	private int price;
 	public int getPcode() {
 		return pcode;

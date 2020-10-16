@@ -16,6 +16,10 @@ public class Employee {
 	public void setEno(int eno) {
 		this.eno = eno;
 	}
+	@Override
+	public String toString() {
+		return "Employee [eno=" + eno + ", ename=" + ename + ", adress=" + adress + "]";
+	}
 	public String getEname() {
 		return ename;
 	}

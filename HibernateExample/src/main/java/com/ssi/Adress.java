@@ -5,6 +5,10 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Adress {
 	
+	@Override
+	public String toString() {
+		return "Adress [hno=" + hno + ", district=" + district + ", state=" + state + "]";
+	}
 	private int hno;
 	private String district;
 	private String state;
